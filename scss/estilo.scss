@@ -10,7 +10,6 @@ body {background-color: black;}
     "barraNav"
     "secciones"
     "footer"
-    
     ;
 
 }
@@ -63,7 +62,8 @@ body {background-color: black;}
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);}
+    transform: translate(-50%, -50%);
+    }
 
 
  /*
@@ -149,3 +149,50 @@ body {background-color: black;}
    .footer{
     grid-area:footer;
 }
+
+
+   /*page-gira*/
+.giraFechas, .h1Gira {color: whitesmoke;}
+.giraFechas, .h1 {color: whitesmoke;}
+
+
+.paginaGira {display: grid;
+    grid-template-columns:repeat(1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr);
+    grid-template-areas: 
+    "barraNav"
+    "volver"
+    "h1Gira"
+"contenedorTour"
+"footer"
+
+    ;}
+
+
+    .barraNav{
+        grid-area:barraNav;
+    }
+ 
+    .volver{
+     grid-area:volver;
+ }
+
+ .h1Gira{
+    grid-area:h1Gira;
+}
+ .contenedorTour{text-align: center;
+   
+    grid-area:contenedorTour;
+}
+ .footer{
+    grid-area:footer;
+}
+
+.giraFechas {list-style: none;
+font-size: 20px;}
+
+.discografiaLista{list-style: none;
+    font-size: 20px;}
+
+    .h1, .h2, .h3 {font-size: 20px;}
+
